@@ -37,9 +37,6 @@ return array(
     'admin/order' => 'adminOrder/index',
     // Админпанель:
     'admin' => 'admin/index',
-    // О магазине
-    'contacts' => 'site/contact',
-    'about' => 'site/about',
     // Главная страница
     'index.php' => 'site/index', // actionIndex в SiteController
     '' => 'site/index', // actionIndex в SiteController

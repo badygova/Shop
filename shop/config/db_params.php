@@ -1,8 +1,12 @@
 <?php
 // Массив с параметрами подключения к базе данных
-return array(
-'host' => 'localhost',
-'dbname' => 'shop',
-'user' => 'user',
-'password' => '123',
-);
+function getInfo()
+{
+    $arr = array(
+        'host' => 'localhost',
+        'dbname' => 'phpshop',
+        'user' => 'user',
+        'password' => '123',
+    );
+    return $arr;
+}
