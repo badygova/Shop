@@ -1,23 +1,23 @@
 //modal
 $(".sign_in").click(function (event) {
     event.preventDefault();
-    modalOpen(`<form onsubmit="return false" class="modal-form" action="">
+    modalOpen(`<form class="modal-form" action="signIn.php" method="post">
     <h1 class="form__title">Вход</h1>
     <div class="form__group">
-    <input placeholder=" " type="text" name="login" id="log" class="form__input" />
+    <input placeholder=" " type="text" name="email" id="log" class="form__input" />
     <label class="form__label" for="log">Email</label>
     </div>
     <div class="form__group">
     <input placeholder=" " type="password" id="pass" name="password" class="form__input" />
     <label class="form__label" for="pass">Пароль</label>
     </div>
-    <button class="form__button" >Войти</button>
+    <button class="form__button" name="signIn" >Войти</button>
     </form>`);
 });
 
 $(".sign_up").click(function (event) {
     event.preventDefault();
-    modalOpen(`<form onsubmit="return false" class="modal-form" action="">
+    modalOpen(`<form class="modal-form" action="signUp.php" method="post">
             <h1 class="form__title">Регистрация</h1>
             <div class="form__group">
             <input placeholder=" " type="text" name="name" id="name" class="form__input" /> 
@@ -26,14 +26,14 @@ $(".sign_up").click(function (event) {
             <input placeholder=" " type="text" name="secondName" id="secondName" class="form__input" /> 
             <label class="form__label" for="secondName">Фамилия</label></div>
             <div class="form__group"> 
-            <input placeholder=" " type="text" name="login" id="reg" class="form__input" /> 
+            <input placeholder=" " type="text" name="email" id="reg" class="form__input" /> 
             <label class="form__label" for="reg">Email</label>
             </div>
             <div class="form__group">  
             <input placeholder=" " type="password" id="pass" name="password" class="form__input" />
             <label class="form__label" for="pass">Пароль</label>
             </div>
-            <button class="form__button">Зарегистрироваться</button>
+            <button class="form__button" name="signUp">Зарегистрироваться</button>
         </form>`);
 });
 
