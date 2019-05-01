@@ -74,6 +74,13 @@
             </div>
         </div>
     </div>
+</header>
+<!-- Header section end -->
+
+
+
+<!-- Hero section -->
+<section class="hero-section">
     <nav class="main-navbar">
         <div class="container">
             <!-- menu -->
@@ -95,26 +102,11 @@
                         <li><a href="#">Повседневная</a></li>
                     </ul>
                 </li>
-                <!--<li><a href="#">Pages</a>
-                    <ul class="sub-menu">
-                        <li><a href="./product.html">Product Page</a></li>
-                        <li><a href="./category.html">Category Page</a></li>
-                        <li><a href="./cart.html">Cart Page</a></li>
-                        <li><a href="./checkout.html">Checkout Page</a></li>
-                        <li><a href="./contact.html">Contact Page</a></li>
-                    </ul>
-                </li>-->
+
                 <li><a href="#contact">Связаться</a></li>
             </ul>
         </div>
     </nav>
-</header>
-<!-- Header section end -->
-
-
-
-<!-- Hero section -->
-<section class="hero-section">
     <div class="hero-slider owl-carousel">
         <div class="hs-item set-bg" data-setbg="../template/img/bg.jpg">
             <div class="container">
@@ -131,7 +123,7 @@
                 </div>
             </div>
         </div>
-        <div class="hs-item set-bg" data-setbg="../template/img/bg-2.jpg">
+        <div class="hs-item set-bg" data-setbg="../template/img/bg-2.jpg" style="background-repeat: no-repeat; background-size: cover; background-position: center 100%;">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-7 text-white">
@@ -426,19 +418,19 @@
         <div class="row">
             <div class="col-lg-6 contact-info">
                 <h3>Вы можете найти нас по адресу:</h3>
-                <p>Респеблика Татарстан, город Казань, ул. Деревня Универсиады д.18</p>
-                <p>+7 937 876 17 21</p>
-                <p>abadygova17@gmail.com</p>
+                <p style="font-size: 23px">Респеблика Татарстан, город Казань, ул. Деревня Универсиады д.18</p>
+                <p style="font-size: 23px">+7 937 876 17 21</p>
+                <p style="font-size: 23px">abadygova17@gmail.com</p>
                 <div class="contact-social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Ваше имя имя">
-                    <input type="text" placeholder="Ваш e-mail">
-                    <input type="text" placeholder="Тема">
-                    <textarea placeholder="Сообщение"></textarea>
+                <form class="contact-form" >
+                    <input type="text" placeholder="Ваше имя имя" style="font-size: 24px">
+                    <input type="text" placeholder="Ваш e-mail" style="font-size: 24px">
+                    <input type="text" placeholder="Тема" style="font-size: 24px">
+                    <textarea placeholder="Сообщение" style="font-size: 24px"></textarea>
                     <button class="site-btn">ОТПРАВИТЬ</button>
                 </form>
             </div>
