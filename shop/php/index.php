@@ -72,6 +72,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </header>
@@ -102,7 +103,6 @@
                         <li><a href="#">Повседневная</a></li>
                     </ul>
                 </li>
-
                 <li><a href="#contact">Связаться</a></li>
             </ul>
         </div>

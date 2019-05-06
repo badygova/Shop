@@ -1,6 +1,69 @@
 <?php include __DIR__.'/layouts/header.php';?>
 	<!-- Hero section -->
-	<section class="hero-section">
+<section class="hero-section">
+    <nav class="main-navbar">
+        <div class="container">
+            <!-- menu -->
+            <ul class="main-menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Одежда</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Верхняя</a></li>
+                        <li><a href="#">Верх</a></li>
+                        <li><a href="#">Низ</a></li>
+                        <li><a href="#">Платья</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Украшения</a></li>
+                <li><a href="#">Обувь</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">На каблуке</a></li>
+                        <li><a href="#">Спортивная</a></li>
+                        <li><a href="#">Повседневная</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Связаться</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero-slider owl-carousel">
+        <div class="hs-item set-bg" data-setbg="../template/img/bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 text-white">
+                        <span>Новая коллекция</span>
+                        <p>Текст текст текст текст</p>
+                    </div>
+                </div>
+                <div class="offer-card text-white">
+                    <span>от</span>
+                    <h2>990</h2>
+                    <p>КУПИТЬ</p>
+                </div>
+            </div>
+        </div>
+        <div class="hs-item set-bg" data-setbg="../template/img/bg-2.jpg" style="background-repeat: no-repeat; background-size: cover; background-position: center 100%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 text-white">
+                        <span>Новая коллекция</span>
+                        <p>Текст текст текст текст</p>
+                    </div>
+                </div>
+                <div class="offer-card text-white">
+                    <span>от</span>
+                    <h2>990</h2>
+                    <p>КУПИТЬ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="slide-num-holder" id="snh-1"></div>
+    </div>
+</section>
+<!-- Hero section end -->
+	<!--<section class="hero-section">
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item set-bg" data-setbg="../template/img/bg.jpg">
 				<div class="container">
@@ -37,7 +100,7 @@
 			<div class="slide-num-holder" id="snh-1"></div>
 		</div>
 	</section>
-	<!-- Hero section end -->
+	Hero section end -->
 
 
 
@@ -320,12 +383,12 @@
 						<a href="#"><i class="fa fa-twitter"></i></a>
 						<a href="#"><i class="fa fa-instagram"></i></a>
 					</div>
-					<form class="contact-form">
-						<input type="text" placeholder="Ваше имя имя">
-						<input type="text" placeholder="Ваш e-mail">
-						<input type="text" placeholder="Тема">
-						<textarea placeholder="Сообщение"></textarea>
-						<button class="site-btn">ОТПРАВИТЬ</button>
+					<form class="contact-form" action="../controllers/emailController.php" id="form" method="post" name="form">
+						<input type="text" id="name" name="name" placeholder="Ваше имя имя">
+						<input type="text" id="email" name="email" placeholder="Ваш e-mail">
+						<input type="text" id="sub" name="sub"  placeholder="Тема">
+						<textarea id="message" name="message" placeholder="Сообщение"></textarea>
+						<button class="site-btn" id="submit" name="submit">ОТПРАВИТЬ</button>
 					</form>
 				</div>
 			</div>

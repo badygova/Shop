@@ -71,19 +71,15 @@
             </div>
         </div>
     </div>
-    <nav class="main-navbar">
+    <!-- <nav class="main-navbar">
         <div class="container">
-            <!-- menu -->
+             menu
             <ul class="main-menu">
                 <li><a href="#">Главная</a></li>
-                <?php foreach ($categories as $categoryItem): ?>
-                <li><a href="/category/<?php echo $categoryItem['id']; ?>">
-                        <?php echo $categoryItem['name']; ?>
-                    </a></li>
-                <?php endforeach; ?>
+                <li><a href="">Категория</a></li>
                 <li><a href="#contact">Связаться</a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
 </header>
 <!-- Header section end -->
