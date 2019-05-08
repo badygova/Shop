@@ -1,15 +1,15 @@
 <?php
-require "db.php";
 require "index.php";
+require "db.php";
 
 $data = $_POST;
-if( isset($data['signIn']) ) {
+if( isset($data['email'])&&isset($data['password'])) {
     $errors = array();
     $user =  R::findOne('users', 'email = ?', array($data['email']));
     if ( $user ) {
         if ( password_verify($data['password'], $user->password)) {
             //TODO: сделать приветствие
-            echo  $user["name"].", "."привет";
+            echo  $user["username"].", "."привет";
         } else {
             $errors[] = 'Неверно введен пароль или логин!';
         }
@@ -17,7 +17,7 @@ if( isset($data['signIn']) ) {
         $errors[] = 'Пользователь с таким логином не найден!';
     }
 
-    if ( ! empty($errors) ) {
+    if (empty($errors) ) {
         //TODO: выводить ошибки
 //        echo '<div style="color: red;">'.array_shift($errors).'</div><hr>';
     }
