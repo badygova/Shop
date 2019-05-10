@@ -426,7 +426,7 @@ color: rgba(173,172,172,0.69);
 	top: 0;
 	right: 0;
 	left: 0;
-	z-index: 9999;
+	z-index: 3000;
 }
 
 .slicknav_menu {

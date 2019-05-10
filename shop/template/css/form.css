@@ -6,7 +6,7 @@
     top: 0;
 
     background-color: white;
-    z-index: 2000;
+    z-index: 4000;
     width: auto;
     height: auto;
     border-radius: 5px;
@@ -30,7 +30,7 @@
 }
 
 #overlay {
-    z-index: 3;
+    z-index: 3000;
     position: fixed;
     background-color: #000;
     opacity: 0.8;
@@ -52,6 +52,7 @@
     padding: 32px;
     border-radius: 2px;
     letter-spacing: 1px;
+    z-index: 5000;
 }
 
 .form__input,
