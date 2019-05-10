@@ -53,10 +53,8 @@
                 <div class="col-xl-4 col-lg-5">
                     <div class="user-panel">
                         <div class="up-item">
-                            <i class="flaticon-profile"></i>
-                            <a href="#" class="sign_in">Войти</a>
-                            <i class="flaticon-puzzle"></i>
-                            <a href="#" class="sign_up">Создать аккаунт</a>
+                            <i class="flaticon-logout"></i>
+                            <a href="index.php" class="logout">Выйти</a>
                         </div>
 
                         <div class="up-item">
@@ -72,4 +70,3 @@
         </div>
     </div>
 </header>
-<!-- Header section end -->

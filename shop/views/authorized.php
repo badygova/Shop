@@ -1,4 +1,4 @@
-<?php include __DIR__.'/layouts/header.php';?>
+<?php include __DIR__.'/layouts/header_autho.php';?>
 	<!-- Hero section -->
 <section class="hero-section">
     <nav class="main-navbar">
@@ -62,47 +62,6 @@
         <div class="slide-num-holder" id="snh-1"></div>
     </div>
 </section>
-<!-- Hero section end -->
-	<!--<section class="hero-section">
-		<div class="hero-slider owl-carousel">
-			<div class="hs-item set-bg" data-setbg="../template/img/bg.jpg">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-7 text-white">
-							<span>Новая коллекция</span>
-							<p>Текст текст текст текст</p>
-						</div>
-					</div>
-					<div class="offer-card text-white">
-						<span>от</span>
-						<h2>990</h2>
-						<p>КУПИТЬ</p>
-					</div>
-				</div>
-			</div>
-			<div class="hs-item set-bg" data-setbg="../template/img/bg-2.jpg">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-7 text-white">
-							<span>Новая коллекция</span>
-							<p>Текст текст текст текст</p>
-						</div>
-					</div>
-					<div class="offer-card text-white">
-						<span>от</span>
-						<h2>990</h2>
-						<p>КУПИТЬ</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="slide-num-holder" id="snh-1"></div>
-		</div>
-	</section>
-	Hero section end -->
-
-
 
 	<!-- Features section -->
 	<section class="features-section">
@@ -385,7 +344,7 @@
 					</div>
 					<form class="contact-form" action="../controllers/emailController.php" id="form" method="post" name="form">
 						<input type="text" id="name" name="name" placeholder="Ваше имя имя">
-			    			<input type="text" id="email" name="email" placeholder="Ваш e-mail">
+						<input type="text" id="email" name="email" placeholder="Ваш e-mail">
 						<input type="text" id="sub" name="sub"  placeholder="Тема">
 						<textarea id="message" name="message" placeholder="Сообщение"></textarea>
 						<button class="site-btn" id="submit" name="submit">ОТПРАВИТЬ</button>
