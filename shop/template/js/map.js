@@ -1,7 +1,7 @@
 function initialize() {
 	var myOptions = {
 		zoom: 15,
-		center: new google.maps.LatLng(40.751412, -73.966302), //change the coordinates
+		center: new google.maps.LatLng(40.751412, -73.966302),
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		scrollwheel: false,
 		mapTypeControl: false,
@@ -13,10 +13,14 @@ function initialize() {
 	var marker = new google.maps.Marker({
 		map: map,
 		icon: img_icon,
-		position: new google.maps.LatLng(40.747508, -73.966302) //change the coordinates
+		position: new google.maps.LatLng(40.747508, -73.966302)
 	});
 	google.maps.event.addListener(marker, "click", function() {
 		infowindow.open(map, marker);
 	});
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
+

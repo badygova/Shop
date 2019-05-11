@@ -4,8 +4,8 @@ function getInfo()
 {
     $arr = array(
         'host' => 'localhost',
-        'dbname' => 'phpshop',
-        'user' => 'user',
+        'dbname' => 'lashop',
+        'user' => 'postgres',
         'password' => '123',
     );
     return $arr;

@@ -393,7 +393,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.9012813505306!2d49.179591115592075!3d55.742844200227914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415eadd584290a13%3A0xd8d7be028c7b6641!2z0YPQuy4g0LTQtdGA0LXQstC90Y8g0KPQvdC40LLQtdGA0YHQuNCw0LTRiywgMTgsINCa0LDQt9Cw0L3RjCwg0KDQtdGB0L8uINCi0LDRgtCw0YDRgdGC0LDQvSwgNDIwMTM4!5e0!3m2!1sru!2sru!4v1555446222269!5m2!1sru!2sru" style="border:0" allowfullscreen></iframe> </div>
+		<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m1
+		2!1m3!1d2245.9012813505306!2d49.179591115592075!3d55.742844200227914!2m3!1f0!
+		2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415eadd584290a13%3A0xd8d7be028c7b
+		6641!2z0YPQuy4g0LTQtdGA0LXQstC90Y8g0KPQvdC40LLQtdGA0YHQuNCw0LTRiywgMTgsINCa0L
+		DQt9Cw0L3RjCwg0KDQtdGB0L8uINCi0LDRgtCw0YDRgdGC0LDQvSwgNDIwMTM4!5e0!3m2!1sru!2
+		sru!4v1555446222269!5m2!1sru!2sru" style="border:0" allowfullscreen></iframe> </div>
 		<div>&nbsp</div>
 	</section>
 	<!-- Contact section end -->

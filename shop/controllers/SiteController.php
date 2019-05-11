@@ -2,7 +2,6 @@
 /**
  * Контроллер CartController
  */
-include_once __DIR__.'/models/Category.php';
 class SiteController
 {
     /**
@@ -11,8 +10,7 @@ class SiteController
     public function actionIndex()
     {
         // Список категорий для левого меню
-        $categories = array();
-        $categories = Category::getCategoriesList();
+        //$categories = Category::getCategoriesList();
         // Список последних товаров
         //$latestProducts = Product::getLatestProducts(6);
         // Список товаров для слайдера
@@ -21,4 +19,40 @@ class SiteController
         require_once(ROOT . '/views/index.php');
         return true;
     }
+    /**
+     * Action для страницы "Контакты"
+     */
+    public function actionContact()
+    {
+        // Переменные для формы
+        $userEmail = false;
+        $userText = false;
+        $result = false;
+        // Обработка формы
+        if (isset($_POST['submit'])) {
+            // Если форма отправлена
+            // Получаем данные из формы
+            $userEmail = $_POST['userEmail'];
+            $userText = $_POST['userText'];
+            // Флаг ошибок
+            $errors = false;
+            // Валидация полей
+            if (!User::checkEmail($userEmail)) {
+                $errors[] = 'Неправильный email';
+            }
+            if ($errors == false) {
+                // Если ошибок нет
+                // Отправляем письмо администратору
+                $adminEmail = 'abadygova17@gmail.ru';
+                $message = "Текст: {$userText}. От {$userEmail}";
+                $subject = 'Тема письма';
+                $result = mail($adminEmail, $subject, $message);
+                $result = true;
+            }
+        }
+        // Подключаем вид
+        require_once(ROOT . '/views/index.php');
+        return true;
+    }
+
 }

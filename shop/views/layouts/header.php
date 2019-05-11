@@ -4,22 +4,22 @@
     <title>Shop</title>
     <meta charset="UTF-8">
     <!-- Favicon -->
-    <link href="../template/img/favicon.ico" rel="shortcut icon"/>
+    <link href="../../template/img/favicon.ico" rel="shortcut icon"/>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
 
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../template/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../template/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="../template/css/flaticon.css"/>
-    <link rel="stylesheet" href="../template/css/slicknav.min.css"/>
-    <link rel="stylesheet" href="../template/css/jquery-ui.min.css"/>
-    <link rel="stylesheet" href="../template/css/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="../template/css/animate.css"/>
-    <link rel="stylesheet" href="../template/css/style.css"/>
-    <link rel="stylesheet" href="../template/css/form.css"/>
+    <link rel="stylesheet" href="../../template/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../template/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../../template/css/flaticon.css"/>
+    <link rel="stylesheet" href="../../template/css/slicknav.min.css"/>
+    <link rel="stylesheet" href="../../template/css/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="../../template/css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="../../template/css/animate.css"/>
+    <link rel="stylesheet" href="../../template/css/style.css"/>
+    <link rel="stylesheet" href="../../template/css/form.css"/>
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -62,7 +62,7 @@
                         <div class="up-item">
                             <div class="shopping-card">
                                 <i class="flaticon-bag"></i>
-                                <span>0</span>
+                                <span id="cart-count"><?php echo Cart::countItems(); ?></span>
                             </div>
                             <a href="#">Корзина</a>
                         </div>
