@@ -62,47 +62,6 @@
         <div class="slide-num-holder" id="snh-1"></div>
     </div>
 </section>
-<!-- Hero section end -->
-	<!--<section class="hero-section">
-		<div class="hero-slider owl-carousel">
-			<div class="hs-item set-bg" data-setbg="../template/img/bg.jpg">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-7 text-white">
-							<span>Новая коллекция</span>
-							<p>Текст текст текст текст</p>
-						</div>
-					</div>
-					<div class="offer-card text-white">
-						<span>от</span>
-						<h2>990</h2>
-						<p>КУПИТЬ</p>
-					</div>
-				</div>
-			</div>
-			<div class="hs-item set-bg" data-setbg="../template/img/bg-2.jpg">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-7 text-white">
-							<span>Новая коллекция</span>
-							<p>Текст текст текст текст</p>
-						</div>
-					</div>
-					<div class="offer-card text-white">
-						<span>от</span>
-						<h2>990</h2>
-						<p>КУПИТЬ</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="slide-num-holder" id="snh-1"></div>
-		</div>
-	</section>
-	Hero section end -->
-
-
 
 	<!-- Features section -->
 	<section class="features-section">
@@ -378,11 +337,11 @@
 					<p>Респеблика Татарстан, город Казань, ул. Деревня Универсиады д.18</p>
 					<p>+7 937 876 17 21</p>
 					<p>abadygova17@gmail.com</p>
-					<div class="contact-social">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-					</div>
+                    <div class="contact-social">
+                        <a href="https://ru-ru.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
 					<form class="contact-form" action="../controllers/emailController.php" id="form" method="post" name="form">
 						<input type="text" id="name" name="name" placeholder="Ваше имя имя">
 			    			<input type="text" id="email" name="email" placeholder="Ваш e-mail">

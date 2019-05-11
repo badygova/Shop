@@ -11,15 +11,15 @@
 
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../../template/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../../template/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="../../template/css/flaticon.css"/>
-    <link rel="stylesheet" href="../../template/css/slicknav.min.css"/>
-    <link rel="stylesheet" href="../../template/css/jquery-ui.min.css"/>
-    <link rel="stylesheet" href="../../template/css/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="../../template/css/animate.css"/>
-    <link rel="stylesheet" href="../../template/css/style.css"/>
-    <link rel="stylesheet" href="../../template/css/form.css"/>
+    <link rel="stylesheet" href="../template/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../template/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../template/css/flaticon.css"/>
+    <link rel="stylesheet" href="../template/css/slicknav.min.css"/>
+    <link rel="stylesheet" href="../template/css/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="../template/css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="../template/css/animate.css"/>
+    <link rel="stylesheet" href="../template/css/style.css"/>
+    <link rel="stylesheet" href="../template/css/form.css"/>
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -60,10 +60,10 @@
                         </div>
 
                         <div class="up-item">
-                            <div class="shopping-card">
-                                <i class="flaticon-bag"></i>
-                                <span id="cart-count"><?php echo Cart::countItems(); ?></span>
-                            </div>
+<!--                            <div class="shopping-card">-->
+<!--                                <i class="flaticon-bag"></i>-->
+<!--                               <span id="cart-count">--><?php //echo Cart::countItems(); ?><!--</span>-->
+<!--                            </div>-->
                             <a href="#">Корзина</a>
                         </div>
                     </div>
