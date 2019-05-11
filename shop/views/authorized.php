@@ -338,9 +338,9 @@
 					<p>+7 937 876 17 21</p>
 					<p>abadygova17@gmail.com</p>
 					<div class="contact-social">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="https://ru-ru.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
 					</div>
 					<form class="contact-form" action="../controllers/emailController.php" id="form" method="post" name="form">
 						<input type="text" id="name" name="name" placeholder="Ваше имя имя">
