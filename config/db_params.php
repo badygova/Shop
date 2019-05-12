@@ -6,7 +6,7 @@ function getInfo()
         'host' => 'localhost',
         'dbname' => 'lashop',
         'user' => 'postgres',
-        'password' => '123',
+        'password' => 'qwerty19',
     );
     return $arr;
 }
