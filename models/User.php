@@ -15,9 +15,10 @@ class User
     {
         // Соединение с БД
         $db = Db::getConnection();
+        $myId = 2;
         // Текст запроса к БД
-        $sql = 'INSERT INTO user (name, email, password) '
-            . 'VALUES (:name, :email, :password)';
+        $sql = 'INSERT INTO users ( username, email, password) '
+            . 'VALUES ( :name, :email, :password)';
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':name', $name, PDO::PARAM_STR);
@@ -37,9 +38,7 @@ class User
         // Соединение с БД
         $db = Db::getConnection();
         // Текст запроса к БД
-        $sql = "UPDATE user 
-            SET name = :name, password = :password 
-            WHERE id = :id";
+        $sql = "UPDATE users SET username = :name, password = :password WHERE id = :id";
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':id', $id, PDO::PARAM_INT);
@@ -58,7 +57,7 @@ class User
         // Соединение с БД
         $db = Db::getConnection();
         // Текст запроса к БД
-        $sql = 'SELECT * FROM user WHERE email = :email AND password = :password';
+        $sql = 'SELECT * FROM users WHERE email = :email AND password = :password';
         // Получение результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':email', $email, PDO::PARAM_INT);
@@ -163,7 +162,7 @@ class User
         // Соединение с БД
         $db = Db::getConnection();
         // Текст запроса к БД
-        $sql = 'SELECT COUNT(*) FROM user WHERE email = :email';
+        $sql = 'SELECT COUNT(*) FROM users WHERE email = :email';
         // Получение результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':email', $email, PDO::PARAM_STR);
@@ -182,7 +181,7 @@ class User
         // Соединение с БД
         $db = Db::getConnection();
         // Текст запроса к БД
-        $sql = 'SELECT * FROM user WHERE id = :id';
+        $sql = 'SELECT * FROM users WHERE id = :id';
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':id', $id, PDO::PARAM_INT);

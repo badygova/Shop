@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../../template/css/owl.carousel.min.css"/>
     <link rel="stylesheet" href="../../template/css/animate.css"/>
     <link rel="stylesheet" href="../../template/css/style.css"/>
-    <link rel="stylesheet" href="../../template/css/form.css"/>
+   <!--<link rel="stylesheet" href="../../template/css/form.css"/>-->
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -29,9 +29,9 @@
 </head>
 <body>
 <!-- Page Preloder -->
-<div id="preloder">
+<!--<div id="preloder">
     <div class="loader"></div>
-</div>
+</div>-->
 
 <!-- Header section -->
 <header class="header-section">
@@ -52,19 +52,28 @@
                 </div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="user-panel">
-                        <div class="up-item">
+                        <!--<div class="up-item">
                             <i class="flaticon-profile"></i>
                             <a href="#" class="sign_in">Войти</a>
                             <i class="flaticon-puzzle"></i>
                             <a href="#" class="sign_up">Создать аккаунт</a>
-                        </div>
+                        </div>-->
 
+                        <?php if (User::isGuest()): ?>
+                        <div class="up-item">
+                            <i class="flaticon-profile"></i>
+                            <a href="../user/login/" class="sign_in">Войти</a>
+                        <?php else: ?>
+                            <a href="../cabinet/" >Аккаунт</a>
+                            <a href="../user/logout/">Выйти</a>
+                        </div>
+                        <?php endif; ?>
                         <div class="up-item">
                             <div class="shopping-card">
                                 <i class="flaticon-bag"></i>
                                 <span id="cart-count"><?php echo Cart::countItems(); ?></span>
                             </div>
-                            <a href="/cart/">Корзина</>
+                            <a href="">Корзина</>
                         </div>
                     </div>
                 </div>

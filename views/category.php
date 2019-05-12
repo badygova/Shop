@@ -2,7 +2,7 @@
 <!-- Page info -->
 <div class="page-top-info">
     <div class="container">
-        <h4>Название категории</h4>
+        <h4><?php echo categoryItem['name'];?></h4>
     </div>
 </div>
 <!-- Page info end -->

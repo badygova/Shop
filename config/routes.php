@@ -15,11 +15,11 @@ return array(
     'cart/addAjax/([0-9]+)' => 'cart/addAjax/$1', // actionAddAjax в CartController
     'cart' => 'cart/index', // actionIndex в CartController
     // Пользователь:
-    //'user/register' => 'user/register',
-    //'user/login' => 'user/login',
-    //'user/logout' => 'user/logout',
-    //'cabinet/edit' => 'cabinet/edit',
-    //'cabinet' => 'cabinet/index',
+    'user/register' => 'user/register',
+    'user/login' => 'user/login',
+    'user/logout' => 'user/logout',
+    'cabinet/edit' => 'cabinet/edit',
+    'cabinet' => 'cabinet/index',
     // Управление товарами:
     //'admin/product/create' => 'adminProduct/create',
     //'admin/product/update/([0-9]+)' => 'adminProduct/update/$1',

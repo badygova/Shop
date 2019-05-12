@@ -1,5 +1,5 @@
 //modal
-$(".sign_in").click(function (event) {
+/*$(".sign_in").click(function (event) {
     event.preventDefault();
     modalOpen(`<form class="modal-form" action="signIn.php" method="post">
     <h1 class="form__title">Вход</h1>
@@ -52,4 +52,4 @@ function modalOpen(content) {
             .animate({opacity: 1, top: "35%"}, 200);
     });
     $("#modal_content").html(content);
-}
+}*/

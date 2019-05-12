@@ -1,5 +1,5 @@
-<?php
-require "db.php";
+
+/*require "db.php";
 require "index.php";
 
 $data = $_POST;
@@ -30,4 +30,4 @@ if (isset($data["username"]) && isset($data["secondName"]) && isset($data["email
         //TODO: выводить ошибки
         // echo '<div style="color: red;">' . array_shift($errors) . '</div><hr>';
     }
-}
+}*/

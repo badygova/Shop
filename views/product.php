@@ -12,25 +12,25 @@
 <section class="product-section">
     <div class="container">
         <div class="back-link">
-            <a href="category.php"> &lt;&lt; Назад к категории</a>
+            <a href="../../category/<?php echo $product['category_id']; ?>"> &lt;&lt; Назад к категории</a>
         </div>
         <div class="row">
             <div class="col-lg-6">
                 <div class="product-pic-zoom">
-                    <img class="product-big-img" src="../template/img/single-product/1.jpg" alt="">
+                    <img class="product-big-img" src="<?php echo Product::getImage($product['id']); ?>" alt="" />
                 </div>
-                <div class="product-thumbs" tabindex="1" style="overflow: hidden; outline: none;">
+                <!--<div class="product-thumbs" tabindex="1" style="overflow: hidden; outline: none;">
                     <div class="product-thumbs-track">
                         <div class="pt active" data-imgbigurl="img/single-product/1.jpg"><img src="../template/img/single-product/thumb-1.jpg" alt=""></div>
                         <div class="pt" data-imgbigurl="img/single-product/2.jpg"><img src="../template/img/single-product/thumb-2.jpg" alt=""></div>
                         <div class="pt" data-imgbigurl="img/single-product/3.jpg"><img src="../template/img/single-product/thumb-3.jpg" alt=""></div>
                         <div class="pt" data-imgbigurl="img/single-product/4.jpg"><img src="../template/img/single-product/thumb-4.jpg" alt=""></div>
                     </div>
-                </div>
+                </div>-->
             </div>
             <div class="col-lg-6 product-details">
-                <h2 class="p-title">Название</h2>
-                <h3 class="p-price">1 990</h3>
+                <h2 class="p-title"><?php echo $product['name']; ?></h2>
+                <h3 class="p-price"><?php echo $product['price']; ?> руб</h3>
                 <div class="p-rating">
                     <i class="fa fa-star-o"></i>
                     <i class="fa fa-star-o"></i>
@@ -67,9 +67,9 @@
                 </div>
                 <div class="quantity">
                     <p>Количество</p>
-                    <div class="pro-qty"><input type="text" value="1"></div>
+                    <div class="pro-qty"><input type="text" value="1"></div><!--надо это как-то передать в корзину-->
                 </div>
-                <a href="#" class="site-btn">КУПИТЬ</a>
+                <a href="#" class="site-btn" data-id="<?php echo $product['id']; ?>">КУПИТЬ</a>
                 <div id="accordion" class="accordion-area">
                     <div class="panel">
                         <div class="panel-header" id="headingOne">
@@ -77,8 +77,9 @@
                         </div>
                         <div id="collapse1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="panel-body">
-                                <p>Текст</p>
-                                <p>Текст</p>
+                                <p><b>Описание:</b><?php echo $product['description']; ?></p>
+                                <p><b>Наличие:</b> <?php echo Product::getAvailabilityText($product['availability']); ?></p>
+                                <p><b>Производитель:</b> <?php echo $product['brand']; ?></p>
                             </div>
                         </div>
                     </div>
@@ -89,7 +90,7 @@
                         <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="panel-body">
                                 <img src="../template/img/cards.png" alt="">
-                                <p>Текст</p>
+                                <p>Вы можете выбрать любой способ оплаты: наличные, перевод, оплата картой.</p>
                             </div>
                         </div>
                     </div>
@@ -99,8 +100,7 @@
                         </div>
                         <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="panel-body">
-                                <p>Текст</p>
-                                <p>Текст</p>
+                                <p>Для жителей Казани возможен самовывоз и доставка курьером.</p>
                             </div>
                         </div>
                     </div>

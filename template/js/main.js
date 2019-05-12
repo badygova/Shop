@@ -9,14 +9,14 @@
 'use strict';
 
 
-$(window).on('load', function() {
+/*$(window).on('load', function() {
 	/*------------------
 		Preloder
 	--------------------*/
-	$(".loader").fadeOut();
+	/*$(".loader").fadeOut();
 	$("#preloder").delay(400).fadeOut("slow");
 
-});
+});*/
 
 (function($) {
 	/*------------------

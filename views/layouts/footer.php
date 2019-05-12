@@ -17,6 +17,6 @@
 <script src="../template/js/jquery.zoom.min.js"></script>
 <script src="../template/js/jquery-ui.min.js"></script>
 <script src="../template/js/main.js"></script>
-<script src="../template/js/index.js"></script>
+<!--<script src="../template/js/index.js"></script>-->
 </body>
 </html>

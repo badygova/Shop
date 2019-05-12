@@ -1,5 +1,5 @@
-<?php
-require "db.php";
+
+/*require "db.php";
 
 $data = $_POST;
 if( isset($data['email'])&&isset($data['password'])) {
@@ -22,4 +22,4 @@ if( isset($data['email'])&&isset($data['password'])) {
         //TODO: выводить ошибки
 //        echo '<div style="color: red;">'.array_shift($errors).'</div><hr>';
     }
-}
+}*/

@@ -121,7 +121,7 @@ class CartController
                 if ($result) {
                     // Если заказ успешно сохранен
                     // Оповещаем администратора о новом заказе по почте
-                    $adminEmail = 'php.start@mail.ru';
+                    $adminEmail = 'abadygova17@gmail.com';
                     $message = '<a href="http://digital-mafia.net/admin/orders">Список заказов</a>';
                     $subject = 'Новый заказ!';
                     mail($adminEmail, $subject, $message);
@@ -131,7 +131,7 @@ class CartController
             }
         }
         // Подключаем вид
-        require_once(__DIR__ . '../views/cart/checkout.php');
+        require_once(__DIR__ . '../views/checkout.php');
         return true;
     }
 }
