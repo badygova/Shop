@@ -43,7 +43,7 @@ class SiteController
             if ($errors == false) {
                 // Если ошибок нет
                 // Отправляем письмо администратору
-                $adminEmail = 'abadygova17@gmail.ru';
+                $adminEmail = 'abadygova17@gmail.сom';
                 $message = "Текст: {$userText}. От {$userEmail}";
                 $subject = 'Тема письма';
                 $result = mail($adminEmail, $subject, $message);

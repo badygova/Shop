@@ -73,7 +73,7 @@
                                 <i class="flaticon-bag"></i>
                                 <span id="cart-count"><?php echo Cart::countItems(); ?></span>
                             </div>
-                            <a href="">Корзина</>
+                            <a href="../cart">Корзина</>
                         </div>
                     </div>
                 </div>

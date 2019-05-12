@@ -59,7 +59,7 @@ class CartController
             $totalPrice = Cart::getTotalPrice($products);
         }
         // Подключаем вид
-        require_once(ROOT . '/views/cart.php');
+        require_once(ROOT . '/views/cart/index.php');
         return true;
     }
     /**
@@ -131,7 +131,7 @@ class CartController
             }
         }
         // Подключаем вид
-        require_once(__DIR__ . '../views/checkout.php');
+        require_once(ROOT . '/views/cart/checkout.php');
         return true;
     }
 }

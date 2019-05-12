@@ -137,7 +137,7 @@
 					<div class="pi-pic">
 						<img src="<?php echo Product::getImage($product['id']); ?>" alt="" />
 						<div class="pi-links">
-							<a href="#" class="add-card" data-id="<?php echo $product['id'];?>"><i class="flaticon-bag"></i><span>В корзину</span></a>
+							<a href="#" class="add-card add-to-cart" data-id="<?php echo $product['id'];?>"><i class="flaticon-bag"></i><span>В корзину</span></a>
 							<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 						</div>
 					</div>
@@ -173,7 +173,7 @@
 						<div class="pi-pic">
 							<img src="<?php echo Product::getImage($product['id']); ?>" alt="" />
 							<div class="pi-links">
-								<a href="#" class="add-card" data-id="<?php echo $product['id'];?>"><i class="flaticon-bag"></i><span>В корзину</span></a>
+								<a href="#" class="add-card add-to-cart" data-id="<?php echo $product['id'];?>"><i class="flaticon-bag"></i><span>В корзину</span></a>
 								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
 							</div>
 						</div>
