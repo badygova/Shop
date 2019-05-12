@@ -71,7 +71,7 @@ class CartController
         $productsInCart = Cart::getProducts();
         // Если товаров нет, отправляем пользователи искать товары на главную
         if ($productsInCart == false) {
-            header("Location: /");
+            header("Location: /category");
         }
         // Список категорий для левого меню
         $categories = Category::getCategoriesList();
@@ -122,7 +122,7 @@ class CartController
                     // Если заказ успешно сохранен
                     // Оповещаем администратора о новом заказе по почте
                     $adminEmail = 'abadygova17@gmail.com';
-                    $message = '<a href="http://digital-mafia.net/admin/orders">Список заказов</a>';
+                    $message = '<a href="localhost/admin/orders">Список заказов</a>';
                     $subject = 'Новый заказ!';
                     mail($adminEmail, $subject, $message);
                     // Очищаем корзину
