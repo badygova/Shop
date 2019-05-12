@@ -18,7 +18,7 @@
                 <h4 style="color: white; font-size: 4vh; text-align: center"">Привет, <?php echo $user['username'];?>!</h4>
                 <ul>
                     <li style="list-style-type: none;"><a  href="/cabinet/edit">Редактировать данные</a></li>
-                    <li style="list-style-type: none;"><a href="http://localhost/catalog">Главная страница</a></li>
+                    <li style="list-style-type: none;"><a href="http://localhost/index.php">Главная страница</a></li>
                     <!--<li><a href="/cabinet/history">Список покупок</a></li>-->
                 </ul>
 

@@ -133,6 +133,12 @@ ol {
 	height: 100%;
 	padding: 7%;
 }
+.test3{
+	margin-left: 90%;
+	width: 450px;
+	height: 100%;
+	padding: 16%;
+}
 .login{
 	width: 100vw;
 	height: 100vh;
@@ -153,7 +159,7 @@ ol {
 }
 input{
 	width: 100%;
-	padding-bottom: 14px;
+	padding-bottom: 4px;
 	border: none;
 	border-bottom: 1px solid #fdfdfe;
 	background-color: transparent;
@@ -169,10 +175,9 @@ input::-webkit-input-placeholder {
 }
 
 a{
-	color: white;
-	font-size: 4vh;
+	color: #adb5bd;
+	font-size: 3vh;
 	text-align: center;
-	margin-left: 15%;
 	transition: 0.7s;
 }
 a:hover{
@@ -461,6 +466,7 @@ color: rgba(173,172,172,0.69);
 .shopping-card {
 	display: inline-block;
 	position: relative;
+
 }
 
 .shopping-card span {

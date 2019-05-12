@@ -47,33 +47,28 @@
                 <div class="col-xl-6 col-lg-5">
                     <form class="header-search-form" method="post" action="#">
                         <input type="text" placeholder="Поиск..." value="">
-                        <input type="submit" name="submit"><i class="flaticon-search"></i></input>
+                        <button type="submit" name="submit"><i class="flaticon-search"></i></button>
                     </form>
                 </div>
                 <div class="col-xl-4 col-lg-5">
-                    <div class="user-panel">
-                        <!--<div class="up-item">
-                            <i class="flaticon-profile"></i>
-                            <a href="#" class="sign_in">Войти</a>
-                            <i class="flaticon-puzzle"></i>
-                            <a href="#" class="sign_up">Создать аккаунт</a>
-                        </div>-->
-
+                    <div class="user-panel" style="margin-left: 50%">
                         <?php if (User::isGuest()): ?>
                         <div class="up-item">
                             <i class="flaticon-profile"></i>
                             <a href="../user/login/" class="sign_in">Войти</a>
                         <?php else: ?>
+                            <i class="flaticon-profile"></i>
                             <a href="../cabinet/" >Аккаунт</a>
-                            <a href="../user/logout/">Выйти</a>
+                            <i class="flaticon-logout"></i>
+                            <a href="http://localhost/">Выйти</a>
                         </div>
                         <?php endif; ?>
                         <div class="up-item">
-                            <div class="shopping-card">
+                            <div class="shopping-card" style="margin-left: 50%">
                                 <i class="flaticon-bag"></i>
                                 <span id="cart-count"><?php echo Cart::countItems(); ?></span>
+                                <a href="../cart">Корзина</>
                             </div>
-                            <a href="../cart">Корзина</>
                         </div>
                     </div>
                 </div>

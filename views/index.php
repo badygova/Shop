@@ -25,7 +25,7 @@
                 </div>
                 <div class="offer-card text-white">
                     <span>от</span>
-                    <h2>990</h2>
+                    <h2>200</h2>
                     <p>КУПИТЬ</p>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="offer-card text-white">
                     <span>от</span>
-                    <h2>990</h2>
+                    <h2>200</h2>
                     <p>КУПИТЬ</p>
                 </div>
             </div>

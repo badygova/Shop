@@ -1,4 +1,4 @@
-<?php include __DIR__.'/layouts/header_autho.php';?>
+<?php include __DIR__.'/layouts/header.php';?>
 	<!-- Hero section -->
 <section class="hero-section">
     <nav class="main-navbar">
