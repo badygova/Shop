@@ -111,6 +111,22 @@ class Category
         // Возвращаем данные
         return $result->fetch();
     }
+    public static function getCategoryNameById($id)
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+        // Текст запроса к БД
+        $sql = 'SELECT name FROM category WHERE id = :id';
+        // Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':id', $id, PDO::PARAM_INT);
+        // Указываем, что хотим получить данные в виде массива
+        //$result->setFetchMode(PDO::FETCH_ASSOC);
+        // Выполняем запрос
+        $result->execute();
+        // Возвращаем данные
+        return $result->fetch();
+    }
     /**
      * Возвращает текстое пояснение статуса для категории :<br/>
      * <i>0 - Скрыта, 1 - Отображается</i>

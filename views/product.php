@@ -69,7 +69,7 @@
                     <p>Количество</p>
                     <div class="pro-qty"><input type="text" value="1"></div><!--надо это как-то передать в корзину-->
                 </div>
-                <a href="../../cart" class="site-btn add-to-cart" data-id="<?php echo $product['id']; ?>">КУПИТЬ</a>
+                <a href="http://localhost/cart" class="site-btn add-to-cart" data-id="<?php echo $product['id']; ?>">КУПИТЬ</a>
                 <div id="accordion" class="accordion-area">
                     <div class="panel">
                         <div class="panel-header" id="headingOne">

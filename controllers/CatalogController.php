@@ -8,14 +8,15 @@ class CatalogController
     /**
      * Action для страницы "Каталог товаров"
      */
-    public function actionIndex()
+    public function actionIndex($categoryId)
     {
         // Список категорий для левого меню
         $categories = Category::getCategoriesList();
+        $category = Category::getCategoryNameById($categoryId);
         // Список последних товаров
-        $latestProducts = Product::getLatestProducts(12);
+        $latestProducts = Product::getLatestProducts(10);
         // Подключаем вид
-        require_once(ROOT . '/views/index.php');
+        require_once(ROOT . '/views/category.php');
         return true;
     }
     /**

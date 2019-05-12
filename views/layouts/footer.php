@@ -2,7 +2,7 @@
 <section class="footer-section">
     <div class="container">
         <div class="footer-logo text-center">
-            <a href="../../catalog" class="logo_white">LAshop</a>
+            <a href="/" class="logo_white">LAshop</a>
         </div>
     </div>
 </section>

@@ -1,10 +1,10 @@
 <?php include __DIR__.'/layouts/header.php';?>
 <!-- Page info -->
-<div class="page-top-info">
+<!--<div class="page-top-info">
     <div class="container">
-        <h4><?php echo categoryItem['name'];?></h4>
+        <h4></h4>
     </div>
-</div>
+</div>-->
 <!-- Page info end -->
 
 
@@ -62,191 +62,26 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-9  order-1 order-lg-2 mb-5 mb-lg-0">
                 <div class="row">
+                    <?php foreach ($categoryProducts as $product): ?>
                     <div class="col-lg-4 col-sm-6">
                         <div class="product-item">
                             <div class="pi-pic">
-                                <div class="tag-sale">ON SALE</div>
-                                <img src="../template/img/product/6.jpg" alt="">
+                                <img src="<?php echo Product::getImage($product['id']); ?>" alt="" />
                                 <div class="pi-links">
-                                    <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
+                                    <a href="#" class="add-card add-to-cart" data-id="<?php echo $product['id']; ?>"><i class="flaticon-bag"></i><span>В корзину</span></a>
                                     <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
                                 </div>
                             </div>
                             <div class="pi-text">
-                                <h6>1 990</h6>
-                                <p>Название</p>
+                                <h6><?php echo $product['price']; ?> руб</h6>
+                                <p><a href="/product/<?php echo $product['id']; ?>">
+                                        <?php echo $product['name']; ?>
+                                    </a></p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="../template/img/product/7.jpg" alt="">
-                                <div class="pi-links">
-                                    <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
-                                    <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="pi-text">
-                                <h6>1 990</h6>
-                                <p>Название</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="../template/img/product/8.jpg" alt="">
-                                <div class="pi-links">
-                                    <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
-                                    <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="pi-text">
-                                <h6>1 990</h6>
-                                <p>Название</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="../template/img/product/10.jpg" alt="">
-                                <div class="pi-links">
-                                    <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
-                                    <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="pi-text">
-                                <h6>1 990</h6>
-                                <p>Название</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="../template/img/product/11.jpg" alt="">
-                                <div class="pi-links">
-                                    <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
-                                    <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="pi-text">
-                                <h6>1 990</h6>
-                                <p>Название</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="../template/img/product/12.jpg" alt="">
-                                <div class="pi-links">
-                                    <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
-                                    <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="pi-text">
-                                <h6>1 990</h6>
-                                <p>Название</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="../template/img/product/5.jpg" alt="">
-                                <div class="pi-links">
-                                    <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
-                                    <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="pi-text">
-                                <h6>1 990</h6>
-                                <p>Название</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="../template/img/product/9.jpg" alt="">
-                                <div class="pi-links">
-                                    <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
-                                    <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="pi-text">
-                                <h6>1 990</h6>
-                                <p>Название</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="../template/img/product/1.jpg" alt="">
-                                <div class="pi-links">
-                                    <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
-                                    <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="pi-text">
-                                <h6>1 990</h6>
-                                <p>Название</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <div class="tag-new">new</div>
-                                <img src="../template/img/product/2.jpg" alt="">
-                                <div class="pi-links">
-                                    <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
-                                    <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="pi-text">
-                                <h6>1990</h6>
-                                <p>Название</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="../template/img/product/3.jpg" alt="">
-                                <div class="pi-links">
-                                    <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
-                                    <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="pi-text">
-                                <h6>1 990</h6>
-                                <p>Название</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="product-item">
-                            <div class="pi-pic">
-                                <img src="../template/img/product/4.jpg" alt="">
-                                <div class="pi-links">
-                                    <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
-                                    <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-                                </div>
-                            </div>
-                            <div class="pi-text">
-                                <h6>1 990</h6>
-                                <p>Название</p>
-                            </div>
-                        </div>
-                    </div>
+                    </div> <?php endforeach; ?>
                 </div>
             </div>
         </div>

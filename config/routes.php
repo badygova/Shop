@@ -1,6 +1,5 @@
 <?php
 return array(
-    //пока так, потом изменим
     // Товар:
     'product/([0-9]+)' => 'product/view/$1', // actionView в ProductController
     // Каталог:

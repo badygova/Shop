@@ -129,10 +129,10 @@
 	<section class="top-letest-product-section">
 		<div class="container">
 			<div class="section-title">
-				<h2>НОВИНКИ</h2>
+				<h2>ЛИДЕРЫ ПРОДАЖ</h2>
 			</div>
 			<div class="product-slider owl-carousel">
-                <?php foreach ($latestProducts as $product): ?>
+                <?php foreach ($sliderProducts as $product): ?>
 				<div class="product-item">
 					<div class="pi-pic">
 						<img src="<?php echo Product::getImage($product['id']); ?>" alt="" />
@@ -164,7 +164,7 @@
 	<section class="product-filter-section">
 		<div class="container">
 			<div class="section-title">
-				<h2>ЛИДЕРЫ ПРОДАЖ</h2>
+				<h2>НОВИНКИ</h2>
 			</div>
 			<div class="row">
                     <?php foreach ($latestProducts as $product): ?>
