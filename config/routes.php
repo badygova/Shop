@@ -38,6 +38,7 @@ return array(
     // Админпанель:
     //'admin' => 'admin/index',
     // Главная страница
+    'search' => 'search/index',
     'index.php' => 'site/index', // actionIndex в SiteController
     '' => 'site/index', // actionIndex в SiteController
 );

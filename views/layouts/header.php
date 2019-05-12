@@ -45,9 +45,9 @@
                     </a>
                 </div>
                 <div class="col-xl-6 col-lg-5">
-                    <form class="header-search-form">
-                        <input type="text" placeholder="Поиск...">
-                        <button><i class="flaticon-search"></i></button>
+                    <form class="header-search-form" method="post" action="#">
+                        <input type="text" placeholder="Поиск..." value="">
+                        <input type="submit" name="submit"><i class="flaticon-search"></i></input>
                     </form>
                 </div>
                 <div class="col-xl-4 col-lg-5">
