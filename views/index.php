@@ -50,47 +50,6 @@
         <div class="slide-num-holder" id="snh-1"></div>
     </div>
 </section>
-<!-- Hero section end -->
-	<!--<section class="hero-section">
-		<div class="hero-slider owl-carousel">
-			<div class="hs-item set-bg" data-setbg="../template/img/bg.jpg">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-7 text-white">
-							<span>Новая коллекция</span>
-							<p>Текст текст текст текст</p>
-						</div>
-					</div>
-					<div class="offer-card text-white">
-						<span>от</span>
-						<h2>990</h2>
-						<p>КУПИТЬ</p>
-					</div>
-				</div>
-			</div>
-			<div class="hs-item set-bg" data-setbg="../template/img/bg-2.jpg">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-7 text-white">
-							<span>Новая коллекция</span>
-							<p>Текст текст текст текст</p>
-						</div>
-					</div>
-					<div class="offer-card text-white">
-						<span>от</span>
-						<h2>990</h2>
-						<p>КУПИТЬ</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="slide-num-holder" id="snh-1"></div>
-		</div>
-	</section>
-	Hero section end -->
-
-
 
 	<!-- Features section -->
 	<section class="features-section">
