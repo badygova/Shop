@@ -127,6 +127,12 @@ ol {
 	height: 100%;
 	padding: 46%;
 }
+.test1{
+	margin-left: 20%;
+	width: 700px;
+	height: 100%;
+	padding: 7%;
+}
 .login{
 	width: 100vw;
 	height: 100vh;
@@ -161,10 +167,17 @@ input::-webkit-input-placeholder {
 	color: #fdfdfe;
 	font-size: 2vh;
 }
-.btn btn-default{
-	background-color: white;
-}
 
+a{
+	color: white;
+	font-size: 4vh;
+	text-align: center;
+	margin-left: 15%;
+	transition: 0.7s;
+}
+a:hover{
+	color: black;
+}
 
 
 /* buttons */

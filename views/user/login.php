@@ -33,7 +33,7 @@
                         <a href="http://localhost/user/register"><input type="submit" name="submit"
                                                                         class="btn btn-default"
                                                                         style="background-color: white; width: 287px;
-                                                                         margin-left: 31px"
+                                                                         margin-left: -16px"
                                                                         value="Регистрация"/></a>
                     </div><!--/sign up form-->
                 </div>
