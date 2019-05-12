@@ -121,6 +121,51 @@ ol {
 /*---------------------
   Commom elements
 -----------------------*/
+.test{
+	margin-left: 60%;
+	width: 650px;
+	height: 100%;
+	padding: 46%;
+}
+.login{
+	width: 100vw;
+	height: 100vh;
+	background: url("/template/img/bg-2.jpg") no-repeat;
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+	-webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+	-o-background-size: 100%; /* Opera 9.6+ */
+	background-size: 100%; /* Современные браузеры */
+}
+.loginH{
+	color: white;
+	font-size: 7vh;
+	text-align: center;
+}
+.form_login{
+	margin-left: 10%;
+
+}
+input{
+	width: 100%;
+	padding-bottom: 14px;
+	border: none;
+	border-bottom: 1px solid #fdfdfe;
+	background-color: transparent;
+	outline: none;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	color: #fdfdfe;
+}
+input::-webkit-input-placeholder {
+	color: #fdfdfe;
+	font-size: 2vh;
+}
+.btn btn-default{
+	background-color: white;
+}
+
+
 
 /* buttons */
 
