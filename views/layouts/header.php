@@ -60,7 +60,7 @@
                             <i class="flaticon-profile"></i>
                             <a href="../cabinet/" >Аккаунт</a>
                             <i class="flaticon-logout"></i>
-                            <a href="http://localhost/">Выйти</a>
+                            <a href="/user/logout">Выйти</a>
                         </div>
                         <?php endif; ?>
                         <div class="up-item">

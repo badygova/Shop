@@ -15,7 +15,6 @@ class User
     {
         // Соединение с БД
         $db = Db::getConnection();
-        $myId = 2;
         // Текст запроса к БД
         $sql = 'INSERT INTO users ( username, email, password) '
             . 'VALUES ( :name, :email, :password)';

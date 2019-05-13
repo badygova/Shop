@@ -93,7 +93,7 @@ class CartController
             // Получаем информацию о пользователе из БД
             $userId = User::checkLogged();
             $user = User::getUserById($userId);
-            $userName = $user['name'];
+            $userName = $user['username'];
         } else {
             // Если гость, поля формы останутся пустыми
             $userId = false;

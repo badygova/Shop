@@ -100,6 +100,6 @@ class UserController
         unset($_SESSION["user"]);
 
         // Перенаправляем пользователя на главную страницу
-        header("Location: /catalog");
+        header("Location: /");
     }
 }
